@@ -24,10 +24,10 @@ The function takes a trie `t` and a word `word`, and returns the length of the s
 
 That is, given the string $w$ of letters $w_1, w_2, \dots, w_n$, the function should return the smallest number $k$ where $w$ is the only string in `t` that starts with $w_1, w_2, \dots, w_k$, or $k = n$.
 
-For example, if `word = "ABLE"` and `t` contains the words `"APPLES", "APPLE", "APPLY", "ABLE", "ALE"` and `"BALE"`, then 
+For example, if `word = "ABLE"` and `t` contains the words `"APPLES", "APPLE", "APPLY", "ABLE", "ALE"` and `"BALE"`, then the shortest unambiguous prefix is `AB`. This is becuase `ABLE` is the only word in `t` starting with `AB` (so the prefix is unambiguous), and if we remove a letter the prefix `A` is ambiguous (so it is the shortest possible unambiguous prefix). So the answer for this case is 2.
 
 You may use any functions and definitions from `trie.h`, but you must not modify `trie.c`.
 
 **Assumptions**
-- `prefix` is a string containing only the characters `'A'` - `'Z'`
-- A word is a prefix of itself, e.g. `"HELLO"` should be counted as a match if `prefix = "HELLO"`.
+- `word` is a string containing only the characters `'A'` - `'Z'`
+- `t` contains `word`
