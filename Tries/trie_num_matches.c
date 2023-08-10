@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "trie.h"
 
-int TrieNumMatches(TrieNode t, char *word) {
+int TrieNumMatches(TrieNode t, char *prefix) {
     // TODO
     return 0;
 }
